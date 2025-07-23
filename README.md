@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
-API REST desenvolvida em **.NET 8** para operações CRUD utilizando **Stored Procedures Oracle**.  
+**API REST** desenvolvida em **.NET 8** para operações CRUD utilizando **Stored Procedures Oracle**.  
 Este projeto é ideal para ser consumido por qualquer frontend SPA, como **Blazor**, **React** ou **Angular**.
 
 ---
@@ -14,7 +14,7 @@ Este projeto é ideal para ser consumido por qualquer frontend SPA, como **Blazo
 
 Demonstrar como construir uma API desacoplada que utiliza:
 
-- .NET 8 Web API
+- .NET 8 Web API (**API REST**)
 - Banco de dados Oracle XE 21c
 - Stored Procedures para todas as operações de CRUD
 - Acesso via `Oracle.ManagedDataAccess.Core`
