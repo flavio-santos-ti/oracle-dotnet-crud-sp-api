@@ -1,5 +1,10 @@
 # Oracle .NET CRUD API with Stored Procedures
 
+![.NET 8](https://img.shields.io/badge/.NET-8.0-blueviolet?logo=dotnet)
+![Oracle DB](https://img.shields.io/badge/Oracle-XE_21c-F80000?logo=oracle)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+
 API REST desenvolvida em **.NET 8** para operações CRUD utilizando **Stored Procedures Oracle**.  
 Este projeto é ideal para ser consumido por qualquer frontend SPA, como **Blazor**, **React** ou **Angular**.
 
@@ -13,6 +18,7 @@ Demonstrar como construir uma API desacoplada que utiliza:
 - Banco de dados Oracle XE 21c
 - Stored Procedures para todas as operações de CRUD
 - Acesso via `Oracle.ManagedDataAccess.Core`
+- Estrutura modular e reaproveitável, adequada para ambientes com frontends independentes (SPA)
 
 ---
 
@@ -30,11 +36,14 @@ Demonstrar como construir uma API desacoplada que utiliza:
 
 ```text
 src/
- └── OracleCrud.Api/
-      ├── Application/       # Casos de uso, DTOs, regras de negócio
-      ├── Controllers/       # Web API controllers (pontos de entrada HTTP)
-      ├── Domain/            # Entidades e interfaces
-      ├── Infrastructure/    # Implementações (Oracle, repositórios, etc)
-      ├── appsettings.json   # Configurações da aplicação
-      └── Program.cs         # Ponto de entrada principal
+ └── OracleCrud.Sp.Api/
+      ├── Application/         # Interfaces e serviços da aplicação
+      │   ├── Interfaces/
+      │   └── Services/
+      ├── Controllers/         # Endpoints HTTP
+      ├── Domain/              # Apenas DTOs (sem entidades de domínio)
+      │   └── Dtos/
+      ├── Infrastructure/      # Repositórios com acesso Oracle via SP
+      ├── appsettings.json     # Configurações da aplicação
+      └── Program.cs           # Ponto de entrada principal
 ```
