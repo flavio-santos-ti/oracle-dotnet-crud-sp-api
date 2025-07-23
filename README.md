@@ -15,7 +15,7 @@ Este projeto é ideal para ser consumido por qualquer frontend SPA, como **Blazo
 Demonstrar como construir uma API desacoplada que utiliza:
 
 - .NET 8 Web API (**API REST**)
-- Banco de dados Oracle XE 21c
+- Banco de dados **Oracle XE 21c**
 - Stored Procedures para todas as operações de CRUD
 - Acesso via `Oracle.ManagedDataAccess.Core`
 - Estrutura modular e reaproveitável, adequada para ambientes com frontends independentes (SPA)
@@ -24,11 +24,11 @@ Demonstrar como construir uma API desacoplada que utiliza:
 
 ## ⚙️ Tecnologias Utilizadas
 
-| Camada         | Tecnologia                                 |
-| -------------- | ------------------------------------------ |
-| Backend        | .NET 8 (ASP.NET Core Web API)              |
-| Banco de Dados | Oracle XE Database 21c + Stored Procedures |
-| Acesso a Dados | Oracle.ManagedDataAccess.Core              |
+| Camada         | Tecnologia                                     |
+| -------------- | ---------------------------------------------- |
+| Backend        | **.NET 8** (ASP.NET Core Web API)              |
+| Banco de Dados | **Oracle XE Database 21c** + Stored Procedures |
+| Acesso a Dados | Oracle.ManagedDataAccess.Core                  |
 
 ---
 
