@@ -26,11 +26,12 @@ Demonstrar como construir uma API desacoplada que utiliza:
 
 ## ⚙️ Tecnologias Utilizadas
 
-| Camada         | Tecnologia                                     |
-| -------------- | ---------------------------------------------- |
-| Backend        | **.NET 8** (ASP.NET Core Web API)              |
-| Banco de Dados | **Oracle XE Database 21c** + Stored Procedures |
-| Acesso a Dados | Oracle.ManagedDataAccess.Core                  |
+| Camada         | Tecnologia                                                                                                |
+| -------------- | --------------------------------------------------------------------------------------------------------- |
+| Backend        | **.NET 8** (ASP.NET Core Web API)                                                                         |
+| Banco de Dados | **Oracle XE Database 21c** + Stored Procedures                                                            |
+| Acesso a Dados | Oracle.ManagedDataAccess.Core                                                                             |
+| Mapeamento     | [Flavio.Santos.NetCore.ObjectMapping](https://www.nuget.org/packages/Flavio.Santos.NetCore.ObjectMapping) |
 
 ---
 
