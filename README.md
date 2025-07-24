@@ -4,6 +4,8 @@
 ![Oracle DB](https://img.shields.io/badge/Oracle-XE_21c-F80000?logo=oracle)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+[![NuGet](https://img.shields.io/nuget/v/Flavio.Santos.NetCore.ObjectMapping.svg?label=object%20mapping)](https://www.nuget.org/packages/Flavio.Santos.NetCore.ObjectMapping/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Flavio.Santos.NetCore.ObjectMapping.svg?color=blue)](https://www.nuget.org/packages/Flavio.Santos.NetCore.ObjectMapping/)
 
 **API REST** desenvolvida em **.NET 8** para operações CRUD utilizando **Stored Procedures Oracle**.  
 Este projeto é ideal para ser consumido por qualquer frontend SPA, como **Blazor**, **React** ou **Angular**.
