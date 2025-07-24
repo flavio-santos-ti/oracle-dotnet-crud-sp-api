@@ -20,6 +20,7 @@ Demonstrar como construir uma API desacoplada que utiliza:
 - Banco de dados **Oracle XE 21c**
 - Stored Procedures para todas as operações de CRUD
 - Acesso via `Oracle.ManagedDataAccess.Core`
+- Mapeamento de **DTOS** com `Flavio.Santos.NetCore.ObjectMapping`
 - Estrutura modular e reaproveitável, adequada para ambientes com frontends independentes (SPA)
 
 ---
