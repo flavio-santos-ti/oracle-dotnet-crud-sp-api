@@ -1,5 +1,4 @@
-﻿// DTO recebido do Frontend (para criação de usuário)
-namespace OracleCrud.Sp.Api.Domain.Dtos;
+﻿namespace OracleCrud.Sp.Api.Domain.Dtos;
 
 public class CreateUserDto
 {
