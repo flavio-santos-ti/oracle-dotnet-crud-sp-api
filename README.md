@@ -101,3 +101,27 @@ Para abrir e executar corretamente o projeto no **Visual Studio 2022**, siga os 
 6. **Banco de dados Oracle XE:**
    - Certifique-se de que o Oracle XE 21c esteja em execução
    - Execute os scripts da pasta `scripts/database/` para criar a view e as stored procedures utilizadas pela API
+
+---
+
+## 🛠️ Exemplo de configuração de conexão (appsettings.Development.json)
+
+Abaixo está um exemplo de configuração mínima para que a aplicação consiga se conectar ao banco de dados Oracle XE. Essa configuração deve ser incluída no arquivo appsettings.Development.json dentro do projeto OracleCrud.Sp.Api.
+
+```json
+{
+  "ConnectionStrings": {
+    "OracleDb": "User Id=app_user;Password=app123;Data Source=localhost:1521/XEPDB1"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
+
+> ⚠️ **Importante:** Em projetos reais, nunca versionar arquivos com senhas.  
+> Utilize `Secret Manager`, variáveis de ambiente ou ferramentas de configuração segura.
