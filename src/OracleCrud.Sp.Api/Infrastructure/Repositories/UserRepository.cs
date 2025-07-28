@@ -73,10 +73,16 @@ public class UserRepository : IUserRepository
         command.Parameters.Add("p_name", OracleDbType.Varchar2).Value = user.Name;
         command.Parameters.Add("p_email", OracleDbType.Varchar2).Value = user.Email;
 
+        var resultParam = new OracleParameter("p_result", OracleDbType.Varchar2, 4000)
+        {
+            Direction = ParameterDirection.Output
+        };
+        command.Parameters.Add(resultParam);
+
         await connection.OpenAsync();
         await command.ExecuteNonQueryAsync();
 
-        return "Usuário atualizado com sucesso.";
+        return resultParam.Value?.ToString() ?? "Erro ao atualizar usuário.";
     }
 
     public async Task<string> DeleteAsync(string id)
@@ -89,9 +95,15 @@ public class UserRepository : IUserRepository
 
         command.Parameters.Add("p_id", OracleDbType.Varchar2).Value = id;
 
+        var resultParam = new OracleParameter("p_result", OracleDbType.Varchar2, 4000)
+        {
+            Direction = ParameterDirection.Output
+        };
+        command.Parameters.Add(resultParam);
+
         await connection.OpenAsync();
         await command.ExecuteNonQueryAsync();
 
-        return "Usuário excluído com sucesso.";
+        return resultParam.Value?.ToString() ?? "Erro ao excluir usuário.";
     }
 }
