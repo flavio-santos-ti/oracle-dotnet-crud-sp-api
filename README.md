@@ -67,3 +67,37 @@ scripts/
 
 Essa pasta contém os artefatos essenciais para configurar o schema app_user, incluindo stored procedures e views utilizadas pela aplicação.
 Esses scripts devem ser executados previamente no banco Oracle para garantir o correto funcionamento da API.
+
+---
+
+## 💡 Abrindo o Projeto no Visual Studio 2022
+
+Para abrir e executar corretamente o projeto no **Visual Studio 2022**, siga os passos abaixo:
+
+1. **Clonar o repositório:**
+
+   ```bash
+   git clone https://github.com/flavio-santos-ti/oracle-dotnet-crud-sp-api.git
+   ```
+
+2. **Abrir a solução:**
+
+   - Navegue até a pasta `src/`
+   - Abra o arquivo `OracleCrud.Sp.sln` com o Visual Studio 2022
+
+3. **Definir o projeto de inicialização:**
+
+   - No **Solution Explorer**, clique com o botão direito sobre `OracleCrud.Sp.Api`
+   - Selecione **"Set as Startup Project"**
+
+4. **Verificar o perfil de execução:**
+
+   - No menu superior, selecione o perfil `OracleCrud.Sp.Api` com o ambiente `Development`
+
+5. **Executar o projeto (F5 ou Ctrl+F5):**
+
+   - A aplicação será iniciada e o navegador abrirá automaticamente o Swagger (`https://localhost:{porta}/swagger`)
+
+6. **Banco de dados Oracle XE:**
+   - Certifique-se de que o Oracle XE 21c esteja em execução
+   - Execute os scripts da pasta `scripts/database/` para criar a view e as stored procedures utilizadas pela API
