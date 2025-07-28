@@ -51,3 +51,19 @@ src/
       ├── appsettings.json     # Configurações da aplicação
       └── Program.cs           # Ponto de entrada principal
 ```
+
+---
+
+## 📁 Scripts de Banco de Dados
+
+```text
+scripts/
+ └── database/
+      ├── sp_insert_user.sql       # Procedure para inserir usuários
+      ├── sp_update_user.sql       # Procedure para atualizar usuários
+      ├── sp_delete_user.sql       # Procedure para deletar usuários
+      └── vw_users.sql             # View para listar usuários
+```
+
+Essa pasta contém os artefatos essenciais para configurar o schema app_user, incluindo stored procedures e views utilizadas pela aplicação.
+Esses scripts devem ser executados previamente no banco Oracle para garantir o correto funcionamento da API.
